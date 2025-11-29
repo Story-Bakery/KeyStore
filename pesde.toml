@@ -13,9 +13,12 @@ build_files = [
 [indices]
 default = "https://github.com/pesde-pkg/index"
 
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
 [dependencies]
-Signal = { workspace = "story_bakery/signal", version = "^" }
-TableUtil = { workspace = "story_bakery/table_util", version = "^" }
+Signal = { repo = "Story-Bakery/Signal", rev = "main" }
+TableUtil = { repo = "Story-Bakery/TableUtil", rev = "main" }
 Promise = { wally = "evaera/promise", version = "^4.0.0" }
 
 [scripts]
